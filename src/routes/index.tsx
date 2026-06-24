@@ -35,8 +35,8 @@ function Index() {
             A Christ-centered community in Springfield proclaiming the Gospel of grace through worship, discipleship, and service.
           </p>
           <div className="mt-14 flex flex-wrap justify-center gap-3">
-            <Button size="sm" asChild className="shadow-lg beam-light">
-              <Link to="/contact">Plan Your Visit <ArrowRight size={9} /></Link>
+            <Button size="lg" variant="gold" asChild className="shadow-lg beam-light px-10 py-6">
+              <Link to="/contact">Plan Your Visit <ArrowRight size={18} /></Link>
             </Button>
             <Button variant="outline" size="lg" asChild className="border-white/40 hover:bg-white hover:text-primary px-10 py-6">
               <a href="https://www.youtube.com/@dismusmutuku1277" target="_blank" rel="noopener noreferrer">
@@ -51,7 +51,7 @@ function Index() {
       <section className="bg-secondary py-20 lg:py-28 text-center">
         <div className="mx-auto max-w-3xl px-6">
           <p className="eyebrow mb-6">Our Foundation</p>
-          <p className="font-display text-3xl md:text-5xl leading-tight text-primary italic">
+          <p className="font-bold text-3xl md:text-5xl leading-tight text-primary italic">
             "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future."
           </p>
           <div className="rule-gold w-16 mx-auto mt-8" />
@@ -65,7 +65,7 @@ function Index() {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
             <div>
               <p className="eyebrow mb-5">This Week</p>
-              <h2 className="font-display text-4xl md:text-6xl text-primary max-w-2xl leading-[1.05]">Stories shaping our community.</h2>
+              <h2 className="text-4xl md:text-6xl text-primary max-w-2xl leading-[1.05] font-bold tracking-tight">Stories shaping our community.</h2>
             </div>
             <Link to="/events" className="text-sm font-semibold uppercase tracking-widest text-primary hover:text-gold transition-colors inline-flex items-center gap-2">
               All Stories <ArrowRight size={14} />
@@ -82,7 +82,7 @@ function Index() {
                   </div>
                   <div className="px-4">
                     <p className="eyebrow mb-3">Featured Sermon Series</p>
-                    <h3 className="font-display text-3xl md:text-4xl text-primary leading-tight group-hover:text-accent transition-colors">
+                    <h3 className="text-3xl md:text-4xl text-primary leading-tight group-hover:text-accent transition-colors font-bold tracking-tight">
                       Anchored: Finding Steady Ground in Shifting Seasons
                     </h3>
                     <p className="mt-4 text-muted-foreground leading-relaxed max-w-xl">
@@ -107,7 +107,7 @@ function Index() {
                     </div>
                     <div>
                       <p className="eyebrow mb-2 text-[0.65rem]">{s.eyebrow}</p>
-                      <h4 className="font-display text-xl text-primary leading-snug group-hover:text-accent transition-colors">{s.title}</h4>
+                      <h4 className="text-xl text-primary leading-snug group-hover:text-accent transition-colors font-bold tracking-tight">{s.title}</h4>
                     </div>
                   </div>
                 </Link>
@@ -119,14 +119,14 @@ function Index() {
       </section>
 
       {/* WHAT TO EXPECT — split */}
-      <section className="bg-primary text-primary-foreground py-24 lg:py-32">
+      <section className="bg-maroon text-primary-foreground py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
           <div className="aspect-[4/5] overflow-hidden">
             <img src={community} alt="Our community" loading="lazy" className="h-full w-full object-cover" />
           </div>
           <div>
             <p className="eyebrow mb-6">First Time Here?</p>
-            <h2 className="font-display text-4xl md:text-6xl leading-[1.05] mb-8">You're already family — you just haven't met us yet.</h2>
+            <h2 className="text-4xl md:text-6xl leading-[1.05] mb-8 font-bold tracking-tight">You're already family — you just haven't met us yet.</h2>
             <p className="text-primary-foreground/80 text-lg leading-relaxed mb-10">
               Walk in as you are. Coffee is hot, the welcome is warm, and our team will help you find your way. Services last about 75 minutes with worship, scripture, and a Bible-rooted message.
             </p>
@@ -134,15 +134,17 @@ function Index() {
               {[
                 { t: "Sunday Worship", d: "9:00 AM & 11:00 AM" },
                 { t: "Kids & Youth", d: "Programs for every age, both services" },
-                { t: "Address", d: "123 Grace Avenue, Springfield, IL" },
+                { t: "Address", d: "Mwihoko, Githurai" },
               ].map((i) => (
                 <div key={i.t} className="border-b border-primary-foreground/15 pb-5">
-                  <p className="font-display text-2xl text-gold">{i.t}</p>
+                  <p className="text-2xl text-gold font-bold">{i.t}</p>
                   <p className="text-primary-foreground/75 mt-1">{i.d}</p>
                 </div>
               ))}
             </div>
-            <Link to="/contact" className="btn-gold">Plan a Visit <ArrowRight size={16} /></Link>
+            <Button asChild variant="gold" size="lg" className="px-10 py-6">
+              <Link to="/contact">Plan a Visit <ArrowRight size={16} /></Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -152,7 +154,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <div className="text-center mb-16">
             <p className="eyebrow mb-5">How We Live</p>
-            <h2 className="font-display text-4xl md:text-6xl text-primary">Three pillars of life together.</h2>
+            <h2 className="text-4xl md:text-6xl text-primary font-bold tracking-tight">Three pillars of life together.</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -164,7 +166,7 @@ function Index() {
                 <div className="h-14 w-14 rounded-2xl bg-gold/10 flex items-center justify-center mb-8 group-hover:bg-gold/20 transition-colors">
                   <Icon className="text-gold" size={30} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-display text-3xl text-primary mb-4">{t}</h3>
+                <h3 className="text-3xl text-primary mb-4 font-bold tracking-tight">{t}</h3>
                 <p className="text-muted-foreground leading-relaxed">{d}</p>
                 <div className="absolute top-0 left-0 right-0 h-1.5 bg-gold rounded-t-3xl scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
               </div>
@@ -173,19 +175,6 @@ function Index() {
         </div>
       </section>
 
-      {/* GIVE CTA */}
-      <section className="bg-secondary py-24 lg:py-32">
-        <div className="mx-auto max-w-4xl px-6 text-center">
-          <p className="eyebrow mb-6">Partner With Us</p>
-          <h2 className="font-display text-4xl md:text-6xl text-primary leading-[1.05] mb-6">Every gift moves the mission forward.</h2>
-          <p className="text-muted-foreground text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            Your generosity fuels worship, discipleship, outreach, and care for those in need — here in Springfield and around the world.
-          </p>
-          <Button size="lg" asChild>
-            <Link to="/give">Give Now <ArrowRight size={16} /></Link>
-          </Button>
-        </div>
-      </section>
     </>
   );
 }

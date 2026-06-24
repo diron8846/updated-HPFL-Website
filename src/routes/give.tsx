@@ -82,7 +82,7 @@ function Give() {
               {
                 Icon: Building2,
                 t: "Mail a Check",
-                d: "Hope For Life Ministry · 123 Grace Avenue · Springfield, IL 62701",
+                d: "Hope For Life Ministry · Mwihoko, Githurai",
                 cta: "Get Address",
               },
             ].map(({ Icon, t, d, cta }) => (
@@ -95,7 +95,7 @@ function Give() {
                 <p className="text-muted-foreground text-sm leading-relaxed mb-8 min-h-[72px]">
                   {d}
                 </p>
-                <Button variant="default" className="w-full">
+                <Button variant="gold" className="w-full">
                   {cta} <ArrowRight size={14} />
                 </Button>
                 <div className="absolute top-0 left-0 right-0 h-1.5 bg-gold rounded-t-3xl scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />

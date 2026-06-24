@@ -24,12 +24,12 @@ function Contact() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-[1fr_1.3fr] gap-16">
           <div>
             <p className="eyebrow mb-5">Visit & Contact</p>
-            <h2 className="font-display text-4xl text-primary mb-10">Find us. Call us. Email us.</h2>
+            <h2 className="text-4xl font-bold tracking-tight text-primary mb-10">Find us. Call us. Email us.</h2>
             <ul className="space-y-8">
               {[
-                { Icon: MapPin, t: "Our Location", d: "123 Grace Avenue\nSpringfield, IL 62701" },
-                { Icon: Phone, t: "Phone", d: "(555) 123-4567" },
-                { Icon: Mail, t: "Email", d: "hello@hopeforlife.org" },
+                { Icon: MapPin, t: "Our Location", d: "Mwihoko, Githurai" },
+                { Icon: Phone, t: "Phone", d: "0710660015 / 0727691035" },
+                { Icon: Mail, t: "Email", d: "hopef4lifeministry@gmail.com" },
                 { Icon: Clock, t: "Office Hours", d: "Mon–Thu · 9:00 AM – 5:00 PM\nFri · 9:00 AM – 12:00 PM" },
               ].map(({ Icon, t, d }) => (
                 <li key={t} className="flex gap-5 border-b border-border pb-6">
@@ -77,7 +77,7 @@ function Contact() {
                 <label className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">Message</label>
                 <textarea rows={5} required className="w-full bg-background border-b border-border px-1 py-3 focus:outline-none focus:border-primary transition-colors resize-none" />
               </div>
-              <Button type="submit" size="lg" className="w-full md:w-auto">
+              <Button type="submit" variant="gold" size="lg" className="w-full md:w-auto">
                 <Send size={16} /> Send Message
               </Button>
             </form>

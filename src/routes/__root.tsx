@@ -112,7 +112,7 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   return (
-    <ThemeProvider defaultTheme="system" storageKey="hpfl-theme">
+    <ThemeProvider defaultTheme="dark" storageKey="hpfl-theme">
       <QueryClientProvider client={queryClient}>
         <div className="flex min-h-screen flex-col">
           <SiteHeader />

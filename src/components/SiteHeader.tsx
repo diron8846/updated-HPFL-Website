@@ -12,7 +12,6 @@ const nav = [
   { to: "/sermons", label: "Sermons" },
   { to: "/events", label: "Events" },
   { to: "/ministries", label: "Ministries" },
-  { to: "/give", label: "Give" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
@@ -25,15 +24,15 @@ export function SiteHeader() {
   });
 
   return (
-    <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border">
+    <header className="sticky top-0 z-50 glass">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="h-12 w-12 rounded-full overflow-hidden border-2 border-gold flex items-center justify-center bg-primary">
             <img src={logo} alt="Hope For Life Ministry Logo" className="h-full w-full object-cover" />
           </div>
           <div className="leading-tight">
-            <div className="font-display text-lg text-primary">Hope For Life</div>
-            <div className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">Ministry</div>
+            <div className="font-bold text-lg text-primary uppercase tracking-tight">Hope For Life</div>
+            <div className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground font-medium">Ministry</div>
           </div>
         </Link>
 
@@ -59,6 +58,9 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-4 lg:hidden">
+          <Button variant="elevated" size="sm" asChild className="h-9 px-4">
+            <Link to="/give">Give</Link>
+          </Button>
           <ThemeToggle />
           <Button
             variant="ghost"

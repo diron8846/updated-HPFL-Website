@@ -8,6 +8,8 @@ import ministriesImage3 from "@/assets/Ministries Image 3.jpg";
 import ministriesImage4 from "@/assets/Ministries Image 4.jpg";
 import ministriesImage5 from "@/assets/Ministries Image 5.jpg";
 import ministriesImage6 from "@/assets/Ministries Image 6.jpg";
+import teacher1 from "@/assets/teacher1.jpg";
+import bible from "@/assets/bible-pulpit.jpg";
 
 export const Route = createFileRoute("/ministries")({
   head: () => ({
@@ -91,7 +93,7 @@ function Ministries() {
                     <span className="h-1.5 w-1.5 rounded-full bg-gold" />
                     <p className="eyebrow text-[0.65rem]">{m.tag}</p>
                   </div>
-                  <h3 className="font-display text-3xl text-primary mb-4 group-hover:text-gold transition-colors">
+                  <h3 className="text-3xl font-bold tracking-tight text-primary mb-4 group-hover:text-gold transition-colors">
                     {m.t}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed mb-8 flex-grow">{m.d}</p>
@@ -116,7 +118,7 @@ function Ministries() {
       <section className="bg-secondary py-20 text-center">
         <div className="mx-auto max-w-2xl px-6">
           <p className="eyebrow mb-6">Can't Find Your Fit?</p>
-          <h2 className="font-display text-3xl md:text-5xl text-primary mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-primary mb-6">
             Let's start a conversation.
           </h2>
           <Button size="lg" asChild>

@@ -16,12 +16,7 @@ export const Route = createFileRoute("/events")({
 });
 
 const events = [
-  { month: "May", day: "24", title: "Pentecost Sunday Celebration", time: "9:00 & 11:00 AM", location: "Main Sanctuary", category: "Worship", desc: "A special service marking the gift of the Holy Spirit with combined choir and communion." },
-  { month: "May", day: "30", title: "Men's Breakfast & Prayer", time: "7:30 AM", location: "Fellowship Hall", category: "Community", desc: "Hot breakfast, real conversation, and prayer for the men of our church." },
-  { month: "Jun", day: "06", title: "Baptism Sunday", time: "11:00 AM", location: "Main Sanctuary", category: "Sacrament", desc: "Celebrate with those publicly identifying with Christ through the waters of baptism." },
-  { month: "Jun", day: "13", title: "Youth Summer Kickoff Night", time: "6:00 PM", location: "Youth Center", category: "Next Gen", desc: "Games, worship, and the start of our 8-week summer series for grades 6–12." },
-  { month: "Jun", day: "20", title: "Marriage Enrichment Workshop", time: "9:00 AM – 3:00 PM", location: "Fellowship Hall", category: "Family", desc: "A one-day workshop for couples in any season, led by Pastor David & Esther." },
-  { month: "Jul", day: "04", title: "Community Outreach Day", time: "10:00 AM", location: "Downtown Springfield", category: "Mission", desc: "Serving meals, hosting kids' activities, and sharing Christ's love with our city." },
+  { month: "Jun", day: "21", title: "Revival Meeting", time: "2:00 PM – 4:30 PM", location: "Main Sanctuary", category: "Worship", desc: "Join us for a powerful time of worship, prayer, and revival." },
 ];
 
 function Events() {

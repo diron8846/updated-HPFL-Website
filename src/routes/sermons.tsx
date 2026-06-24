@@ -28,27 +28,27 @@ export const Route = createFileRoute("/sermons")({
 const sermons = [
   {
     img: sermonsImage1,
-    series: "Anchored",
+    series: "Pst Dismus Mutuku",
     title: "The Hope That Holds the Soul",
-    speaker: "Pastor David Okonkwo",
+    speaker: "Pst Dismus Mutuku",
     date: "May 12, 2026",
     scripture: "Hebrews 6:13–20",
     duration: "42 min",
   },
   {
     img: sermonsImage2,
-    series: "Anchored",
+    series: "Pst Dismus Mutuku",
     title: "When the Storm Doesn't Stop",
-    speaker: "Pastor David Okonkwo",
+    speaker: "Pst Dismus Mutuku",
     date: "May 5, 2026",
     scripture: "Mark 4:35–41",
     duration: "38 min",
   },
   {
     img: sermonsImage3,
-    series: "Anchored",
+    series: "Pst Dismus Mutuku",
     title: "The God Who Cannot Lie",
-    speaker: "Pastor Grace Bennett",
+    speaker: "Pst Dismus Mutuku",
     date: "Apr 28, 2026",
     scripture: "Numbers 23:19",
     duration: "40 min",
@@ -57,7 +57,7 @@ const sermons = [
     img: sermonsImage4,
     series: "Easter",
     title: "He Is Risen — And So Are We",
-    speaker: "Pastor David Okonkwo",
+    speaker: "Pst Dismus Mutuku",
     date: "Apr 21, 2026",
     scripture: "1 Corinthians 15",
     duration: "47 min",
@@ -66,7 +66,7 @@ const sermons = [
     img: sermonsImage5,
     series: "Lent",
     title: "The Long Road to Joy",
-    speaker: "Pastor Grace Bennett",
+    speaker: "Pst Dismus Mutuku",
     date: "Apr 14, 2026",
     scripture: "Luke 24:13–35",
     duration: "36 min",
@@ -75,7 +75,7 @@ const sermons = [
     img: sermonsImage6,
     series: "Lent",
     title: "Garden of Surrender",
-    speaker: "Pastor David Okonkwo",
+    speaker: "Pst Dismus Mutuku",
     date: "Apr 7, 2026",
     scripture: "Matthew 26:36–46",
     duration: "44 min",
@@ -97,25 +97,16 @@ function Sermons() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <p className="eyebrow mb-8">Latest Message</p>
           <div className="bg-card grid lg:grid-cols-2 gap-12 items-center rounded-[2.5rem] border border-border/50 shadow-xl overflow-hidden p-6 lg:p-10">
-            <div className="relative group cursor-pointer overflow-hidden rounded-[2rem] shadow-lg">
-              <div className="aspect-video overflow-hidden">
-                <img
-                  src={featured.img}
-                  alt={featured.title}
-                  width={1400}
-                  height={1000}
-                  loading="lazy"
-                  className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <div className="absolute inset-0 bg-primary/40 group-hover:bg-primary/20 transition-colors flex items-center justify-center">
-                <div className="h-20 w-20 rounded-full bg-gold/90 flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
-                  <PlayCircle
-                    size={40}
-                    strokeWidth={1.5}
-                    className="text-primary fill-primary/10 ml-1"
-                  />
-                </div>
+            <div className="relative overflow-hidden rounded-[2rem] shadow-lg">
+              <div className="aspect-video overflow-hidden bg-black flex items-center justify-center">
+                <video
+                  className="w-full h-full object-contain"
+                  controls
+                  poster={featured.img}
+                  src="/my-sermon.mp4"
+                >
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
             <div className="px-4 lg:px-0">
@@ -171,7 +162,7 @@ function Sermons() {
               <h2 className="font-display text-4xl md:text-5xl text-primary">Recent Messages</h2>
             </div>
             <div className="hidden md:flex gap-3">
-              {["All", "Anchored", "Easter", "Lent"].map((t, i) => (
+              {["All", "Pst Dismus Mutuku", "Easter", "Lent"].map((t, i) => (
                 <Button
                   key={t}
                   variant={i === 0 ? "default" : "secondary"}

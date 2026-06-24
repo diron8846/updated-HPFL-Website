@@ -55,26 +55,22 @@ const beliefs = [
 const team = [
   {
     img: aboutImage2,
-    name: "Pastor David Okonkwo",
-    role: "Lead Pastor",
+    name: "Pastor Dismus Mutuku",
     bio: "Serving since 2009 with a passion for expository preaching and pastoral care.",
   },
   {
     img: aboutImage3,
-    name: "Pastor Grace Bennett",
-    role: "Pastor of Discipleship",
+    name: "Pastor Charles Lovi",
     bio: "Leads our small groups and women's ministry with depth and warmth.",
   },
   {
     img: aboutImage4,
-    name: "Marcus Hill",
-    role: "Worship Director",
+    name: "Pastor Stanley",
     bio: "Cultivates a worship culture rooted in scripture, song, and the gathered church.",
   },
   {
     img: aboutImage5,
-    name: "Sarah Chen",
-    role: "Next Gen Pastor",
+    name: "Pastor Ronald",
     bio: "Shepherds our kids, youth, and college ministries toward Christ-centered formation.",
   },
 ];
@@ -100,7 +96,7 @@ function About() {
           </div>
           <div>
             <p className="eyebrow mb-5">The Beginning</p>
-            <h2 className="font-display text-4xl md:text-5xl text-primary leading-tight mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-primary leading-tight mb-6">
               From a living room to a city-wide family.
             </h2>
             <div className="space-y-5 text-muted-foreground leading-relaxed">
@@ -113,13 +109,13 @@ function About() {
                 Today, Hope For Life Ministry is a multi-generational congregation of over 1,200
                 worshippers, with ministries reaching across age, background, and need. But our
                 heart remains the same — a people in love with Jesus, devoted to His Word, and sent
-                into His world.
-              </p>
-              <p className="font-display italic text-2xl text-primary">
+                Into His world.
+                </p>
+                <p className="italic text-2xl font-bold tracking-tight text-primary">
                 "He has made everything beautiful in its time." — Ecclesiastes 3:11
-              </p>
-            </div>
-          </div>
+                </p>
+                </div>
+                </div>
         </div>
       </section>
 
@@ -127,7 +123,7 @@ function About() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <div className="text-center mb-16">
             <p className="eyebrow mb-5">What We Believe</p>
-            <h2 className="font-display text-4xl md:text-6xl text-primary">
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-primary">
               Rooted in scripture. Centered on Christ.
             </h2>
           </div>
@@ -137,10 +133,10 @@ function About() {
                 key={b.t}
                 className="group relative bg-card p-10 rounded-3xl border border-border/50 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1"
               >
-                <div className="font-display text-gold text-sm tracking-widest mb-6 bg-gold/5 w-fit px-3 py-1 rounded-full border border-gold/10">
+                <div className="text-gold text-sm font-bold tracking-widest mb-6 bg-gold/5 w-fit px-3 py-1 rounded-full border border-gold/10">
                   0{i + 1}
                 </div>
-                <h3 className="font-display text-2xl text-primary mb-4">{b.t}</h3>
+                <h3 className="text-2xl font-bold tracking-tight text-primary mb-4">{b.t}</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">{b.d}</p>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gold scale-x-0 group-hover:scale-x-100 transition-transform origin-left rounded-b-3xl" />
               </div>
@@ -152,9 +148,8 @@ function About() {
       <section className="py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <div className="text-center mb-16">
-            <p className="eyebrow mb-5">Our Team</p>
-            <h2 className="font-display text-4xl md:text-6xl text-primary">
-              Shepherds, not celebrities.
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-primary">
+              Our Team
             </h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -168,9 +163,8 @@ function About() {
                     className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <div className="px-2">
-                  <p className="eyebrow mb-2 text-[0.65rem]">{m.role}</p>
-                  <h3 className="font-display text-2xl text-primary mb-2 group-hover:text-gold transition-colors">
+                <div className="px-2 mt-4">
+                  <h3 className="text-2xl font-bold tracking-tight text-primary mb-2 group-hover:text-gold transition-colors">
                     {m.name}
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{m.bio}</p>
